@@ -1,7 +1,7 @@
 
 |    学习讨论小组🍻    |           打赏（赠送学习资料：[webNote](https://github.com/Cc-Edit/webNote)） :confetti_ball:     | 
 |:-------------------------------------------------------------------------------:|:--------------------------------------------------------------------:| 
-| ![wechat.png](https://static.sisjs.com/images/WeChatGroup.png)  | ![img.png](https://static.sisjs.com/images/img.png) |
+| ![wechat.png](https://static.sisjs.com/images/WeChatGroup.png?v=2)  | ![img.png](https://static.sisjs.com/images/img.png) |
 
 # CcHook
 有帮助的话记得给个Star哟 🥰  
