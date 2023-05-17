@@ -1,0 +1,143 @@
+[
+  {
+    "id": "CcHook",
+    "execute-command": "/home/CcHook/CcHook/index.sh",
+    "command-working-directory": "/home/CcHook/",
+    "response-message": "Executing CcHook webhook...",
+    "success-http-response-code": 200,
+    "trigger-rule-mismatch-http-response-code": 401,
+    "include-command-output-in-response": false,
+    "pass-arguments-to-command": [
+      {
+        "source": "payload",
+        "name": "head_commit.id"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.name"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.email"
+      }
+    ],
+    "trigger-rule": {
+      "and": [
+        {
+          "match": {
+            "type": "payload-hmac-sha1",
+            "secret": "*****************请替换********************",
+            "parameter": {
+              "source": "header",
+              "name": "X-Hub-Signature"
+            }
+          }
+        },
+        {
+          "match":{
+            "type": "value",
+            "value": "refs/heads/main",
+            "parameter": {
+              "source": "payload",
+              "name": "ref"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "static",
+    "execute-command": "/home/CcHook/CcHook/index.sh",
+    "command-working-directory": "/home/static/",
+    "response-message": "Executing static webhook...",
+    "success-http-response-code": 200,
+    "trigger-rule-mismatch-http-response-code": 401,
+    "include-command-output-in-response": false,
+    "pass-arguments-to-command": [
+      {
+        "source": "payload",
+        "name": "head_commit.id"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.name"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.email"
+      }
+    ],
+    "trigger-rule": {
+      "and": [
+        {
+          "match": {
+            "type": "payload-hmac-sha1",
+            "secret": "*****************请替换********************",
+            "parameter": {
+              "source": "header",
+              "name": "X-Hub-Signature"
+            }
+          }
+        },
+        {
+          "match":{
+            "type": "value",
+            "value": "refs/heads/main",
+            "parameter": {
+              "source": "payload",
+              "name": "ref"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "backers",
+    "execute-command": "/home/CcHook/backers/index.sh",
+    "command-working-directory": "/home/CcHook/backers/",
+    "response-message": "Executing backers webhook...",
+    "success-http-response-code": 200,
+    "trigger-rule-mismatch-http-response-code": 401,
+    "include-command-output-in-response": false,
+    "pass-arguments-to-command": [
+      {
+        "source": "payload",
+        "name": "head_commit.id"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.name"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.email"
+      }
+    ],
+    "trigger-rule": {
+      "and": [
+        {
+          "match": {
+            "type": "payload-hmac-sha1",
+            "secret": "*****************请替换********************",
+            "parameter": {
+              "source": "header",
+              "name": "X-Hub-Signature"
+            }
+          }
+        },
+        {
+          "match":{
+            "type": "value",
+            "value": "refs/heads/main",
+            "parameter": {
+              "source": "payload",
+              "name": "ref"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
