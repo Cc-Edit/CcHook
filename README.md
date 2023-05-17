@@ -12,6 +12,20 @@
 ## 介绍
 [https://zhuanlan.zhihu.com/p/630007999](https://zhuanlan.zhihu.com/p/630007999)
 
+## 任务说明
+### [backers](backers)
+> 打赏用户自动化维护 （复杂）
+> 1. 自动向打赏用户发送邮件
+> 2. 将打赏用户头像上传到static仓库
+> 3. 更新首页项目中打赏信息
+
+### [CcHook](CcHook)
+> 当前项目自身自动重启更新
+
+### [static](static)
+> 静态文件仓库有更新自动部署脚本，指定工作空间
+
+
 
 ## 使用流程
 1. 将项目 clone 到任意目录
