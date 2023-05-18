@@ -12,7 +12,7 @@
 ## 介绍
 [https://zhuanlan.zhihu.com/p/630007999](https://zhuanlan.zhihu.com/p/630007999)
 
-## 任务说明
+## 内置示例
 ### [backers](backers)
 > 打赏用户自动化维护 （复杂）
 > 1. 自动向打赏用户发送邮件
